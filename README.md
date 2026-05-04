@@ -1,35 +1,78 @@
-# HR Analytics Dashboard
+🚀 HR Analytics Dashboard (Power BI + PostgreSQL + SQL)
 
-A complete end-to-end HR analytics project analyzing 2 million employee records across attrition, salary, and performance using PostgreSQL and Power BI.
+An end-to-end HR Analytics solution designed to analyze workforce trends across 2M+ employee records, focusing on attrition, compensation, and performance metrics.
+This project demonstrates the complete data workflow from SQL-based data processing to interactive dashboard reporting in Power BI.
 
-## Tools Used
-- PostgreSQL — data storage and SQL analysis
-- Power BI — interactive dashboards
-- Data Source: Kaggle HR Dataset
+📌 Objective
+To analyze employee data and uncover patterns in:
 
-## Dashboard Pages
+Attrition behavior
+Salary distribution
+Performance trends
 
-**1. Attrition Analysis**
-- Total Employees: 2M | Attrited: 206K | Attrition Rate: 10.30%
-- HR department has the highest attrition (11.93%), IT has the lowest (9.12%)
-- Junior-level employees account for the most attrition (126K)
-- Employees rated "Needs Improvement" have nearly double the attrition rate (19.64%)
+Enabling data-driven HR decision-making and workforce optimization.
 
-**2. Salary Analysis**
-- Avg Salary: $90.18K | Max: $322.11K | Min: $33.31K | Median: $80.91K
-- IT pays the most ($97K avg), HR pays the least ($75K avg)
-- Director-level earns $226K avg vs $50.76K for Junior-level
+🛠️ Tech Stack
+PostgreSQL → Data storage, cleaning, and transformation
+SQL → Data extraction, joins, aggregations, preprocessing
+Power BI → Dashboard development and visualization
+DAX → KPI calculations and analytical measures
+Dataset → Kaggle HR Dataset (2M+ records)
 
-**3. Performance Analysis**
-- Excellent Performers: 299K (14.94% rate) | Needs Improvement: 140K
-- Finance has the highest excellent rate (15.02%)
-- Performance rate is nearly identical across On-site, Hybrid, and Remote work modes
+🔄 Data Pipeline
+Raw HR dataset imported into PostgreSQL
+Data cleaning and preprocessing using SQL queries (joins, aggregations)
+Processed data loaded into Power BI
+DAX measures created for KPI calculations
+Interactive dashboards built for analysis and reporting
 
-## Key Insights
-1. Attrition is heavily concentrated at the Junior level (61% of all departures)
-2. Low performers leave at almost double the rate of others
-3. Salary does not vary with performance — pay is driven by job level, not rating
-4. Work mode has no measurable impact on employee performance
+📊 Dashboard Overview
 
-## Author
-Created by Aditya Sahu | 2026
+🔹 Attrition Analysis
+Total Employees: 2M | Attrited: 206K | Attrition Rate: 10.30%
+Highest attrition in HR (11.93%), lowest in IT (9.12%)
+Junior-level employees account for 61% of total attrition
+Employees rated Needs Improvement show 19.64% attrition rate
+
+🔹 Salary Analysis
+Average Salary: $90.18K | Median: $80.91K
+IT has highest average salary ($97K), HR lowest ($75K)
+Salary strongly varies by job level:
+Director: $226K
+Junior: $50.76K
+
+🔹 Performance Analysis
+Excellent Performers: 299K (14.94%)
+Needs Improvement: 140K
+Finance shows highest performance rate (15.02%)
+Performance remains consistent across On-site, Hybrid, Remote
+
+📈 Key Insights
+🔍 Attrition is heavily concentrated at the Junior level (61%)
+📉 Low-performing employees leave at nearly 2× higher rate
+💰 Salary is driven by job level, not performance rating
+🌍 Work mode has no significant impact on employee performance
+
+💡 Business Impact
+Helps HR identify high-risk attrition segments
+Enables targeted retention strategies for junior employees
+Supports compensation structure evaluation
+Provides insights for performance management optimization
+
+📸Dashboard Overview
+Home Page
+Attrition Analysis
+Salary Analysis
+Performance Analysis
+
+📁 Repository Structure
+HR-Analytics-Dashboard/
+│── dashboard.pbix
+│── sql_queries.sql
+│── screenshots/
+│── README.md
+👤 Author
+
+Aditya Sahu
+Aspiring Data Analyst | SQL • Power BI • Python
+
